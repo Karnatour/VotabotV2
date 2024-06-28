@@ -3,7 +3,7 @@ const {SlashCommandBuilder} = require('discord.js');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('join')
-        .setDescription('Pripoji se k tobe do kanalu'),
+        .setDescription('Připojí se k tobě do kanálu'),
     async execute(interaction) {
         const player = await interaction.client.shoukaku.joinVoiceChannel({
             guildId: interaction.guildId,
