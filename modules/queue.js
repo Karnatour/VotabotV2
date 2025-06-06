@@ -14,6 +14,10 @@ class Queue {
         return this.items.shift();
     }
 
+    clearQueue() {
+        this.items = [this.items[0]];
+    }
+
     front() { //Returns the element at the front of the queue without removing it.
         if (this.isEmpty()) {
             return "Queue is empty";
